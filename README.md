@@ -59,7 +59,7 @@ The table below covers prominent hosted appointment scheduling and automated boo
 
 Self-hosted and developer-first appointment scheduling infrastructure. Repositories are sorted in descending order by GitHub stargazers. 🌟
 
-| Project | Stars | Tech Stack / Architecture | Key Highlights & Description |
+| Project | GitHub_Stars | Tech Stack / Architecture | Key Highlights & Description |
 | :--- | :--- | :--- | :--- |
 | **[Cal.com](https://github.com/calcom/cal.com)** | [![Stars](https://img.shields.io/github/stars/calcom/cal.com?style=social&color=white)](https://github.com/calcom/cal.com/stargazers) | Next.js, React, TypeScript, Prisma, PostgreSQL | 🌐 **The premier open-source scheduling infrastructure** (formerly Calendso). Full feature parity with Calendly: round-robin routing, collective events, team availability, webhooks, app store (Zoom, Meet, Stripe), and complete data ownership. |
 | **[Easy!Appointments](https://github.com/alextselegidis/easyappointments)** | [![Stars](https://img.shields.io/github/stars/alextselegidis/easyappointments?style=social&color=white)](https://github.com/alextselegidis/easyappointments/stargazers) | PHP (CodeIgniter), JavaScript, MySQL | 🛠️ **Highly reliable self-hosted booking engine** for businesses and service providers. Provides responsive customer booking, multi-provider calendar management, and Google Calendar sync. |
@@ -82,7 +82,7 @@ We welcome community contributions to keep this list accurate and comprehensive!
 1. 🍴 Fork this repository.
 2. 📝 Add your SaaS product or open-source tool following the existing tabular structure.
    - For SaaS: Must include specific company scale, starting tier pricing, and exact free tier limits.
-   - For Open-Source: Must include a shields.io social star badge linking to `/stargazers`, tech stack, and descriptive overview.
+   - For Open-Source: Must include a shields.io social Stars_Badge linking to `/stargazers`, tech stack, and descriptive overview.
 3. 🎯 Keep descriptions objective, concise, and factual.
 4. 🚀 Submit a Pull Request with a clear title and description.
 
