@@ -1,187 +1,85 @@
-# Awesome-Appointment-Scheduling
+# Awesome Appointment Scheduling [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-## Top Appointment Scheduling Ecosystem
+> A curated list of awesome appointment scheduling SaaS platforms, calendar sync tools, inbound meeting routers, and open-source booking infrastructure.
 
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Booking Infrastructure, Calendar Sync & Team Routing*  
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Appointment Scheduling**. These tools enable individuals and teams to share availability, automate booking flows, and manage calendars—from simple personal booking pages to enterprise routing engines that qualify leads before they book.
-
-
-
-**Examples** include Calendly, Doodle, Acuity Scheduling, Setmore, Chili Piper, YouCanBookMe, Square Appointments, HubSpot Meetings, OnceHub, and Cal.com (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, calendar ownership, and open scheduling infrastructure—ideal for developers, privacy-conscious teams, and organizations seeking transparent, vendor-independent booking systems.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Calendly](https://calendly.com/)**  
-
-  **The most widely adopted scheduling platform** with client self-scheduling and custom availability settings . **Free tier** supports one event type and one bookable calendar—no payments, no automated reminders . **Standard at $10/user/month**, Enterprise at $15,000/year for large companies . **The default choice** for individuals and small teams wanting quick setup.
-
-
-
-- **[Chili Piper](https://www.chilipiper.com/)**  
-
-  **Enterprise-grade inbound conversion engine**—leads book demos directly from forms or emails in under 30 seconds at the moment of intent . **Deep Salesforce and HubSpot integration** routes based on territory, account ownership, ICP fit, and rep availability . **Customers report 30-50% conversion lifts** on inbound demo flows . **Pricing starts at $15,000/year**—inaccessible to startups and SMB teams . **Annual-only contracts** with $45-50 per additional seat per month .
-
-
-
-- **[YouCanBookMe](https://youcanbook.me/)**  
-
-  **The most customizable small-business scheduler** with branded booking pages, 40+ languages, and deep form customization . **Free tier**: 1 calendar connection, 1 booking page . **Individual at $7.20/month**, Professional at $10.40/month, Teams at $14.40/member/month . **Stripe payments** with Apple Pay and Google Pay support . **6,000+ Zapier integrations** .
-
-
-
-- **[Doodle](https://doodle.com/)**  
-
-  **The original group scheduling tool** with free group polls, booking pages, and sign-up sheets . **Professional at $15/month** adds calendar sync, branding, ad-free experience, and participant tracking . **Team at $8.95/user/month** (annual) adds admin console, roles, custom branding, and Stripe payments . **Enterprise starts at $15,000/year** for 50+ employee orgs .
-
-
-
-- **[Acuity Scheduling](https://acuityscheduling.com/)**  
-
-  **The standard for consultation-based businesses**—astrologers, tarot readers, business consultants, and wellness practitioners . **Automations for reminders, follow-ups, and re-booking** are frequently praised . **Note**: No longer a standalone product—**requires a paid Squarespace account** to operate . **Pricing is high** for small businesses and non-profits .
-
-
-
-- **[Setmore](https://www.setmore.com/)**  
-
-  **Free plan with unlimited appointments** for solo practitioners. **Pro at $12/user/month** (monthly) or **$5/user/month** (annual) adds text reminders, Zoom/Google Meet integration, Google Reviews, recurring appointments, and 2-way calendar sync . **The most affordable paid tier** among major scheduling platforms.
-
-
-
-- **[Square Appointments](https://squareup.com/appointments)**  
-
-  **Free tier for single location** with unlimited calendars and mobile app . **Plus at €19/month** adds Google Calendar sync, automated confirmations, no-show protection, and multiple staff . **Premium at €49/month** adds resource management, time tracking, commissions, and Advanced Access . **The most integrated option** if you already use Square for payments.
-
-
-
-- **[HubSpot Meetings](https://www.hubspot.com/)**  
-
-  **CRM-native scheduling** with round-robin and group meeting availability . **Free with HubSpot CRM**. **Custom booking forms** with contact properties, CAPTCHA, and free email domain blocking . **Best for teams already using HubSpot** for sales and marketing.
-
-
-
-- **[OnceHub](https://www.oncehub.com/)**  
-
-  **Scheduling platform with strong calendar management and online booking** . **Starting at $10/month**. Reviewers note it can be a **powerful tool once you get used to the system**, but usability was a dealbreaker for some .
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Cal.com](https://github.com/calcom/cal.com)**  
-
-  **The open-source scheduling infrastructure** (AGPL-3.0) . **The leading self-hosted Calendly alternative** with **full data ownership**—booking data, calendar credentials, and customer info stay on your infrastructure . **Feature parity with Calendly at the core layer**: event types, custom availability, buffers, minimum notice, time-zone detection, round-robin and collective scheduling . **Routing forms** qualify leads before they book . **Extensive app ecosystem**: Zoom, Google Meet, Teams, Stripe, PayPal, Salesforce, HubSpot, webhooks, Zapier, Make, and REST API . **Self-hosted is free**—pay only for your server (a Contabo VPS from EUR 4.28/month handles it) . **The best choice when you need full ownership, white-labeling, or GDPR-compliant data residency** .
-
-
-
-- **[NextAppointments](https://github.com/ajdichmann/NextAppointments)**  
-
-  **Self-hosted, open-source appointment scheduling built with Next.js and TypeScript** . **Features**: smart scheduling with customizable availability, buffer times, and booking rules; client communication via email and SMS; customizable branding with logo, colors, and custom domain; responsive design for desktop, tablet, and mobile . **Premium integrations** include CRM sync (Salesforce, HubSpot), payment processing (Stripe, PayPal), and calendar sync (Google, Outlook) . **Tech stack**: Next.js, React, TypeScript, Node.js/Express, PostgreSQL/MySQL/MongoDB . **Deploy via Vercel, Docker, or custom hosting** .
-
-
-
-- **[Cal.com DIY (cal.diy)](https://github.com/calcom/cal.diy)**  
-
-  **The self-hosting distribution of Cal.com**—the open-source Calendly alternative . **Full setup documentation** including PostgreSQL configuration, Prisma schema migration, and MailHog for development email testing . **`yarn workspace @calcom/prisma db-migrate`** initializes the database schema . **Windows/PowerShell users** have specific guidance for environment variable injection . **The practical path to running Cal.com on your own infrastructure** .
-
-
-
-- **[Cal.com (GitHub)](https://github.com/calcom/cal.com)**  
-
-  The main repository. See Cal.com above.
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **Calendso** — The original name of Cal.com before rebranding. Historical references may point here.
-
-- Community **n8n** workflows for booking automation and calendar sync orchestration.
-
-
-
-**Frameworks for building custom systems**: Combine **Cal.com** for production-ready self-hosted scheduling with **NextAppointments** for a lighter Next.js-native alternative, **PostgreSQL** for persistence, and **Stripe** for payments—creating a fully self-hosted, enterprise-grade appointment scheduling platform.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Appointment scheduling tools handling personal data must comply with data protection regulations (GDPR, CCPA, etc.) and calendar provider terms of service.
-
-- **Open-source scheduling is mature and production-ready.** Cal.com provides feature parity with Calendly at the core layer while offering **full data ownership**—the decisive advantage for GDPR-conscious teams and regulated industries . **Self-hosting can save thousands of dollars per year for teams of 10+ users** .
-
-- **Calendly's free tier is limited.** One event type, one bookable calendar, no payments, no automated reminders . **The paid tiers unlock the features most businesses actually need.**
-
-- **Chili Piper is a different category.** It's not a booking tool—it's an **inbound conversion engine** that qualifies leads and routes them to the right rep at the moment of intent . **$15K/year is the price of enterprise conversion optimization** .
-
-- **Acuity requires Squarespace.** The standalone product no longer exists—**you must have a paid Squarespace account** . This is a significant change that affects small businesses and non-profits.
-
-- Self-hosted open-source solutions require proper security hardening, database management, and ongoing maintenance. **Calendar credentials are sensitive**—encryption at rest and access controls are essential.
-
-
+Appointment scheduling tools empower individuals, service professionals, sales teams, and enterprises to automate booking workflows, eliminate back-and-forth emails, eliminate scheduling conflicts across time zones, and qualify/route inbound leads in real time.
 
 ---
 
+## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Hosted Platforms](#saas--hosted-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer & Evaluation Guide](#disclaimer--evaluation-guide)
 
-**Made for developers, small business owners, and operations teams building transparent scheduling solutions.**  
+---
 
-Let's make Appointment Scheduling more open, data-driven, and calendar-independent.
+## Sector Overview & Market Dynamics
+
+The global appointment scheduling software market is estimated at **$450M–$600M+ in 2024 and projected to reach $1.3B+ by 2030** (growing at a ~13–15% CAGR). 
+
+The sector is **moderately fragmented** rather than winner-take-all:
+- **Broad self-serve personal/team scheduling** is anchored by category leaders like **Calendly**, but broad horizontal reach leaves ample room for specialized players.
+- **Verticalized niches** (such as **Acuity** for beauty/wellness/consultations, **Square Appointments** for omnichannel point-of-sale retail, and **Chili Piper** for enterprise B2B inbound routing) maintain strong moats and pricing power.
+- Simultaneously, privacy concerns, HIPAA/GDPR data residency mandates, and customizable developer workflows have fueled rapid expansion of **open-source and self-hosted scheduling infrastructure** (pioneered by **Cal.com**).
+
+---
+
+## SaaS & Hosted Platforms
+
+The table below covers prominent hosted appointment scheduling and automated booking platforms, sorted in descending order by estimated company valuation / annual revenue scale.
+
+| Platform | Company Scale (Valuation / Revenue) | Pricing (Starting Tier) | Free Tier Limits | Key Highlights & Target Use Case |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Square Appointments](https://squareup.com/appointments)** | **~$40B+ Market Cap** (Block Inc. parent) | **$29/location/month** (Plus plan; 30-day free trial) | **Free Forever plan**: 1 staff member/calendar, basic appointment booking, POS integration, unlimited appointments. (Paid Plus unlocks multi-staff, automated text reminders, Google Calendar sync). | Best for service-based businesses, salons, and retail requiring integrated point-of-sale (POS) and payment processing. |
+| **[HubSpot Meetings](https://www.hubspot.com/products/sales/schedule-meeting)** | **~$28B+ Market Cap** (HubSpot Inc. parent) | **$15/seat/month** (Sales Hub Starter billed annually) | **Free Forever plan**: 1 personal meeting link per user with HubSpot branding, basic CRM contact creation, and calendar sync (Google/Office 365). (Paid removes branding and unlocks round-robin team links). | Seamless CRM-native meeting scheduling with instant deal and contact record creation for marketing and sales teams. |
+| **[Acuity Scheduling](https://acuityscheduling.com/)** | **~$6.9B Acquisition** (Squarespace parent) | **$16/month** (Emerging plan billed annually, or $20/month billed monthly) | **7-day free trial only** (Full access during trial; no free-forever plan available). Requires paid Squarespace/Acuity account. | Built for consultants, wellness providers, coaches, and salons requiring intake forms, recurring subscriptions, and deposit collection. |
+| **[Calendly](https://calendly.com/)** | **~$3.0B+ Valuation** (~$150M+ ARR) | **$10/user/month** (Standard plan billed annually, or $12/month billed monthly) | **Free Forever plan**: 1 active event type, 1 calendar connection, automated event notifications, unlimited 1-on-1 bookings. (No group events, automated SMS, or payment integrations). | The global standard for individual and team booking pages; ubiquitous calendar sync and effortless one-on-one booking. |
+| **[Chili Piper](https://www.chilipiper.com/)** | **~$625M Valuation** (~$30M+ ARR) | **$15/user/month** (Instant Booker) or **$30/user/month** (Handoff); Form concierge starts at **$150+/platform/mo** | **No free-forever plan**; 14-day free trial available upon sales qualification for product tier evaluation. | Enterprise inbound conversion engine that qualifies leads from web forms and routes them to reps based on CRM territory/routing rules. |
+| **[Doodle](https://doodle.com/)** | **~$100M+ Acquisition** (TX Group) | **$6.95/user/month** (Pro plan billed annually, or $14.95 billed monthly) | **Free Forever plan**: Unlimited basic group polls with ads; 1 booking page with Doodle branding. (Ad-free, 1:1 meetings, and calendar sync require Pro). | Optimal for group consensus polling, committee availability finding, and board meeting coordination. |
+| **[OnceHub](https://www.oncehub.com/)** | **~$20M–$40M Valuation** (~$10M+ ARR) | **$10/user/month** (Schedule plan billed annually, or $12 billed monthly) | **Free Forever plan**: Up to 3 users, 1 live booking page, 25 meetings per month, video conferencing integrations. | Multi-channel customer journey scheduling with chatbots, instant live calls, and round-robin team assignment. |
+| **[YouCanBookMe](https://youcanbook.me/)** | **~$15M–$30M Valuation** (~$5M–$8M ARR) | **$7.20/calendar/month** (Paid plan billed annually, or $9 billed monthly; 14-day free trial) | **Free Forever plan**: 1 linked calendar, 1 booking page type, basic email notifications, YCBM branding. (SMS reminders and custom styling require paid plan). | Highly customizable booking pages with multi-language support (40+ languages), personalized forms, and Zapier connectivity. |
+| **[Setmore](https://www.setmore.com/)** | **Bootstrapped / ~$10M–$20M ARR** | **$5/user/month** (Pro plan billed annually for 1–2 users, or $12 billed monthly) | **Free Forever plan**: Up to 4 team members, unlimited appointments, basic email reminders, Square/Teleport video integration. | Cost-effective team scheduling for clinics, barbershops, and solo practitioners wanting staff profiles on free tier. |
+
+---
+
+## Open-Source GitHub Projects
+
+Self-hosted and developer-first appointment scheduling infrastructure. Repositories are sorted in descending order by GitHub stargazers.
+
+| Project | Stars | Tech Stack / Architecture | Key Highlights & Description |
+| :--- | :--- | :--- | :--- |
+| **[Cal.com](https://github.com/calcom/cal.com)** | [![Stars](https://img.shields.io/github/stars/calcom/cal.com?style=social&color=white)](https://github.com/calcom/cal.com/stargazers) | Next.js, React, TypeScript, Prisma, PostgreSQL | **The premier open-source scheduling infrastructure** (formerly Calendso). Full feature parity with Calendly: round-robin routing, collective events, team availability, webhooks, app store (Zoom, Meet, Stripe), and complete data ownership. |
+| **[Easy!Appointments](https://github.com/alextselegidis/easyappointments)** | [![Stars](https://img.shields.io/github/stars/alextselegidis/easyappointments?style=social&color=white)](https://github.com/alextselegidis/easyappointments/stargazers) | PHP (CodeIgniter), JavaScript, MySQL | **Highly reliable self-hosted booking engine** for businesses and service providers. Provides responsive customer booking, multi-provider calendar management, and Google Calendar sync. |
+| **[Someday](https://github.com/rbbydotdev/someday)** | [![Stars](https://img.shields.io/github/stars/rbbydotdev/someday?style=social&color=white)](https://github.com/rbbydotdev/someday/stargazers) | React, TypeScript, Tailwind, Google Apps Script | **Free-to-host calendar availability picker**. An ultra-lightweight open-source Cal.com / Calendly alternative built on Google Apps Script for Gmail/Google Workspace users without separate server hosting costs. |
+| **[CloudMeet](https://github.com/dennisklappe/CloudMeet)** | [![Stars](https://img.shields.io/github/stars/dennisklappe/CloudMeet?style=social&color=white)](https://github.com/dennisklappe/CloudMeet/stargazers) | TypeScript, Cloudflare Workers / Pages, D1 | **Edge-native Calendly alternative running on Cloudflare's free tier**. Minimalist meeting scheduler with Google Calendar and Microsoft Outlook bidirectional synchronization. |
+| **[Open Reception](https://github.com/open-reception/appointment-booking-software)** | [![Stars](https://img.shields.io/github/stars/open-reception/appointment-booking-software?style=social&color=white)](https://github.com/open-reception/appointment-booking-software/stargazers) | Node.js, React, MongoDB | **End-to-end encrypted appointment booking platform**. Designed for privacy-first operations, medical clinics, and confidential client consultations requiring cryptographic protections. |
+| **[django-appointment](https://github.com/adamspd/django-appointment)** | [![Stars](https://img.shields.io/github/stars/adamspd/django-appointment?style=social&color=white)](https://github.com/adamspd/django-appointment/stargazers) | Python, Django | **Modular appointment scheduling Django app**. Easily pluggable into existing Django web applications with support for custom working hours, buffer times, staff assignment, and email alerts. |
+| **[Punctual](https://github.com/CCCrafts/punctual)** | [![Stars](https://img.shields.io/github/stars/CCCrafts/punctual?style=social&color=white)](https://github.com/CCCrafts/punctual/stargazers) | TypeScript, Cloudflare Workers | **Edge-native scheduling engine without seat limits**. Fast, serverless, and lightweight open scheduler with zero-cold-start performance and MIT licensing. |
+| **[DaySchedule Widget](https://github.com/dayschedule/dayschedule-widget)** | [![Stars](https://img.shields.io/github/stars/dayschedule/dayschedule-widget?style=social&color=white)](https://github.com/dayschedule/dayschedule-widget/stargazers) | JavaScript / Web Components | **Embeddable appointment booking calendar widget** for websites. Supports 1:1, round-robin, and group bookings with Google Meet, Zoom, and MS Teams integrations. |
+| **[Kalle](https://github.com/kalle-app/kalle)** | [![Stars](https://img.shields.io/github/stars/kalle-app/kalle?style=social&color=white)](https://github.com/kalle-app/kalle/stargazers) | Blitz.js, React, Prisma | **Clean, minimal appointment scheduling tool**. Allows scheduling meetings with colleagues, customers, or friends in seconds with intuitive date-slot selections. |
+| **[NexCal](https://github.com/ribato22/nexcal)** | [![Stars](https://img.shields.io/github/stars/ribato22/nexcal?style=social&color=white)](https://github.com/ribato22/nexcal/stargazers) | Next.js 16, PostgreSQL, Docker | **Modern self-hosted Calendly alternative**. Containerized booking system built with modern React Server Components, Docker deployment, and local database control. |
+| **[NextAppointments](https://github.com/ajdichmann/NextAppointments)** | [![Stars](https://img.shields.io/github/stars/ajdichmann/NextAppointments?style=social&color=white)](https://github.com/ajdichmann/NextAppointments/stargazers) | Next.js, React, TypeScript, Node.js | **Full-stack self-hosted appointment scheduler**. Features customizable availability, SMS/email alerts, responsive design, and CRM/payment integrations. |
+
+---
+
+## How to Contribute
+
+We welcome community contributions to keep this list accurate and comprehensive!
+
+1. Fork this repository.
+2. Add your SaaS product or open-source tool following the existing tabular structure.
+   - For SaaS: Must include specific company scale, starting tier pricing, and exact free tier limits.
+   - For Open-Source: Must include a shields.io social star badge linking to `/stargazers`, tech stack, and descriptive overview.
+3. Keep descriptions objective, concise, and factual.
+4. Submit a Pull Request with a clear title and description.
+
+---
+
+## Disclaimer & Evaluation Guide
+
+- **Community Curated**: This list is independently maintained for developers, entrepreneurs, and IT operations teams.
+- **Data Compliance**: Scheduling tools store client email addresses, meeting notes, phone numbers, and calendar tokens. Ensure your deployment conforms to regulations such as GDPR, CCPA, and HIPAA (where applicable).
+- **Self-Hosting Considerations**: Open-source platforms like **Cal.com** and **Easy!Appointments** grant 100% data ownership and eliminate per-seat licensing fees, but require operational maintenance, secure database backups, and webhook endpoint monitoring.
